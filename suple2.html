@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Suplementos Deportivos</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #DCDCDC;
+            color: #000;
+        }
+
+        header {
+            background-color: #555;
+            color: #FFFFFF; /* Cambié el color del texto a blanco */
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        li {
+            width: calc(33.33% - 20px);
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .producto-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Suplementos Deportivos</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bebibles</h2>
+            <ul>
+                <li>
+                    <img src="Imagen1.jpg" alt=" ">
+                    <div class="producto-info">
+                        <h3>Ryse Fuel 12 pack de Ryse Up 1</h3>
+                        <p>Precio: $799.00</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="Imagen2.jpg" alt="">
+                    <div class="producto-info">
+                        <h3>C4 Energy 12 Pack de Cellucor</h3>
+                        
+                        <p>Precio: $841.00</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="Imagen3.jpg" alt="">
+                    <div class="producto-info">
+                        <h3>Carnivor RTD 12 Pack de Musclemeds </h3>
+                        
+                        <p>Precio: $899.00</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Suplementos Deportivos</p>
+    </footer>
+
+</body>
+</html>

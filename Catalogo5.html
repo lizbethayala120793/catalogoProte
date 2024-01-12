@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Suplementos Deportivos</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ecf0f1;
+            color: #333;
+        }
+
+        header {
+            background-color: #2ecc71;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 90%; /* Modificado para adaptarse mejor a pantallas pequeñas */
+            max-width: 800px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2ecc71;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        li {
+            width: calc(100% - 20px); /* Modificado para ocupar el ancho completo en pantallas pequeñas */
+            margin-bottom: 20px;
+            border: 2px solid #2ecc71;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        li:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: auto; /* Modificado para mantener la proporción en pantallas pequeñas */
+            object-fit: cover;
+            display: block;
+            border-bottom: 2px solid #2ecc71;
+        }
+
+        .producto-info {
+            padding: 15px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #2ecc71;
+        }
+
+        p {
+            color: #555;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        footer {
+            background-color: #27ae60;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Suplementos Deportivos</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Bebibles</h2>
+            <ul>
+                <li>
+                    <img src="Imagen1.jpg" alt="Suplemento 1">
+                    <div class="producto-info">
+                        <h3>Ryse Fuel 12 pack de Ryse Up 1</h3>
+                        
+                        <p>Precio: $799.00</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="Imagen2.jpg" alt="Suplemento 2">
+                    <div class="producto-info">
+                        <h3>C4 Energy 12 Pack de Cellucor</h3>
+                        
+                        <p>Precio: $841.00</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </li>
+                <li>
+                    <img src="Imagen3.jpg" alt="Suplemento 3">
+                    <div class="producto-info">
+                        <h3>Carnivor RTD 12 Pack de Musclemeds </h3>
+                        
+                        <p>Precio: $899.00</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </li>
+				<li>
+                    <img src="Imagen4.jpg" alt="Suplemento 3">
+                    <div class="producto-info">
+                        <h3>Bang 12 Pack de VPX </h3>
+                        
+                        <p>Precio: $650.00</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Nueva Sección -->
+        <section>
+            <h2>Nuevos Productos</h2>
+            <ul>
+                <!-- Contenido de la segunda sección -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Catálogo de Suplementos Deportivos</p>
+    </footer>
+
+</body>
+</html>
